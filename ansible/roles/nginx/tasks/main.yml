@@ -23,6 +23,7 @@
   - import_tasks: nginxRestart.yml
     tags:
       - restart_nginx
+      
   - import_tasks: nginxStop.yml
     tags:
       - stop_nginx

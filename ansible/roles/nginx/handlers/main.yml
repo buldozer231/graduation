@@ -1,6 +1,6 @@
 ---
-    - name: {{packageLog}} Start
-      service: name=packageName state=started
+    - name: Nginx Start
+      service: name=nginx state=started
 
-    - name: {{packageLog}} Restart
-      service: name=packageName state=restarted
+    - name: Nginx Restart
+      service: name=nginx state=restarted
