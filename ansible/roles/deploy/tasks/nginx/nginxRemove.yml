@@ -1,0 +1,10 @@
+---
+  -  name: "{{ nginx_log }} Remove"
+     package:
+       name: "{{ nginx_package }}"
+       state: absent
+       update_cache: yes
+     when: nginx_package in ansible_facts.packages
+     tags:
+       - remove_nginx
+       - erase

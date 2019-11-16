@@ -1,0 +1,8 @@
+---
+  - import_tasks: checker.yml
+  - import_tasks: soft.yml
+
+#  - name: "Shutdown"
+#    command: /sbin/shutdown -h now
+#    tags:
+#      - shutdown

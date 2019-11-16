@@ -1,0 +1,5 @@
+---
+  nginx_package: nginx
+  nginx_log: Nginx
+  nginx_install: false
+  nginx_remove: false

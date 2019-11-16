@@ -1,0 +1,10 @@
+---
+  -  name: "{{ nginx_log }} Install"
+     package:
+       name: "{{ nginx_package }}"
+       state: latest
+       update_cache: yes
+     when: nginx_package not in ansible_facts.packages
+     tags:
+       - install_nginx
+       - deploy

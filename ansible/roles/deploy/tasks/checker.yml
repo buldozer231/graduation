@@ -1,0 +1,91 @@
+---
+  - name: "Checking tasks"
+    package_facts:
+      manager: "auto"
+    tags:
+       - always
+###############################################################################
+  - name: "Pre-install check {{nginx_log}}"
+    set_fact:
+      nginx_install: true
+    when: nginx_package not in ansible_facts.packages
+    tags:
+      - install_nginx
+      - deploy
+
+  - name: "Pre-remove check {{ nginx_log }}"
+    set_fact:
+      nginx_remove: true
+    when:
+      - nginx_package in ansible_facts.packages
+    tags:
+      - remove_nginx
+      - erase
+################################################################################
+  - name: "Pre-install check {{nano_log}}"
+    set_fact:
+      nano_install: true
+    when: nano_package not in ansible_facts.packages
+    tags:
+      - install_nano
+      - deploy
+
+  - name: "Pre-remove check {{ nano_log }}"
+    set_fact:
+      nano_remove: true
+    when:
+      - nano_package in ansible_facts.packages
+    tags:
+      - remove_nano
+      - erase
+################################################################################
+  - name: "Pre-install check {{gzip_log}}"
+    set_fact:
+      gzip_install: true
+    when: gzip_package not in ansible_facts.packages
+    tags:
+      - install_gzip
+      - deploy
+
+  - name: "Pre-remove check {{ gzip_log }}"
+    set_fact:
+      gzip_remove: true
+    when:
+      - gzip_package in ansible_facts.packages
+    tags:
+      - remove_gzip
+      - erase
+################################################################################
+  - name: "Pre-install check {{zip_log}}"
+    set_fact:
+      zip_install: true
+    when: zip_package not in ansible_facts.packages
+    tags:
+      - install_zip
+      - deploy
+
+  - name: "Pre-remove check {{ zip_log }}"
+    set_fact:
+      zip_remove: true
+    when:
+      - zip_package in ansible_facts.packages
+    tags:
+      - remove_zip
+      - erase
+################################################################################
+  - name: "Pre-install check {{unzip_log}}"
+    set_fact:
+      unzip_install: true
+    when: unzip_package not in ansible_facts.packages
+    tags:
+      - install_unzip
+      - deploy
+
+  - name: "Pre-remove check {{ unzip_log }}"
+    set_fact:
+      unzip_remove: true
+    when:
+      - unzip_package in ansible_facts.packages
+    tags:
+      - remove_unzip
+      - erase
