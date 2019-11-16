@@ -1,0 +1,7 @@
+---
+ - name: Copy nginx files
+   copy:
+     src: "{{ role_path }}/{{ packageName }}/files/nginx.conf"
+     dest: /etc/nginx/nginx.conf
+     mode: 0644
+   notify: Nginx Restart
