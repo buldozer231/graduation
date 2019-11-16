@@ -1,0 +1,19 @@
+---
+  - import_tasks: checker.yml
+  - import_tasks: nginxInstall.yml
+    tags:
+      - deploy
+      - install_nginx
+  - import_tasks: nginxRemove.yml
+    tags:
+      - remove_nginx
+      - erase
+  - import_tasks: nginxStart.yml
+    tags:
+      - start_nginx
+  - import_tasks: nginxRestart.yml
+    tags:
+      - restart_nginx
+  - import_tasks: nginxStop.yml
+    tags:
+      - stop_nginx

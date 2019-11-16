@@ -1,4 +1,5 @@
 ---
+  - import_tasks: checker.yml
   - import_tasks: nginxInstall.yml
     tags:
       - deploy
