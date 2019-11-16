@@ -1,3 +1,4 @@
 ---
   packageName: nginx
   packageLog: Nginx
+  role_path: /etc/graduation/ansible/roles
