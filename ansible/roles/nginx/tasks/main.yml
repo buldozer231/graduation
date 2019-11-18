@@ -1,5 +1,4 @@
 ---
-  - import_tasks: checker.yml
   - import_tasks: nginxInstall.yml
     tags:
       - deploy
@@ -23,7 +22,7 @@
   - import_tasks: nginxRestart.yml
     tags:
       - restart_nginx
-      
+
   - import_tasks: nginxStop.yml
     tags:
       - stop_nginx

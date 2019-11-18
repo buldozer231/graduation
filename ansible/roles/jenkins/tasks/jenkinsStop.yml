@@ -1,5 +1,5 @@
 ---
-  -  name: Stop Nginx
-     service: name=nginx state=stopped
+  -  name: Stop Jenkins
+     service: name=jenkins state=stopped
      tags:
-       - stop_nginx
+       - stop_jenkins

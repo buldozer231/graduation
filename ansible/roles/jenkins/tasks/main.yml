@@ -1,19 +1,18 @@
 ---
-  - import_tasks: checker.yml
-  - import_tasks: nginxInstall.yml
+  - import_tasks: jenkinsInstall.yml
     tags:
       - deploy
-      - install_nginx
-  - import_tasks: nginxRemove.yml
+      - install_jenkins
+  - import_tasks: jenkinsRemove.yml
     tags:
-      - remove_nginx
+      - remove_jenkins
       - erase
-  - import_tasks: nginxStart.yml
+  - import_tasks: jenkinsStart.yml
     tags:
-      - start_nginx
-  - import_tasks: nginxRestart.yml
+      - start_jenkins
+  - import_tasks: jenkinsRestart.yml
     tags:
-      - restart_nginx
-  - import_tasks: nginxStop.yml
+      - restart_jenkins
+  - import_tasks: jenkinsStop.yml
     tags:
-      - stop_nginx
+      - stop_jenkins

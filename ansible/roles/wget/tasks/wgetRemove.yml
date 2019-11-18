@@ -6,5 +6,5 @@
        update_cache: yes
      when: packageName in ansible_facts.packages
      tags:
-       - remove_jenkins
+       - remove_wget
        - erase

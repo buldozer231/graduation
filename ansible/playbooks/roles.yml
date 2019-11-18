@@ -1,5 +1,10 @@
 ---
 - hosts: all
   become: yes
+#  become_password: 1Vfrcbv53
   roles:
+    - checker
+    - wget
+    - java
+    - jenkins
     - nginx

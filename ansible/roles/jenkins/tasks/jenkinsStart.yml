@@ -1,6 +1,6 @@
 ---
-  -  name: Start Nginx
-     service: name=nginx state=started
+  -  name: Start Jenkins
+     service: name=jenkins state=started
      tags:
        - deploy
-       - start_nginx
+       - start_jenkins
