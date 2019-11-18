@@ -1,6 +1,6 @@
 ---
    - name: "{{ packageLog }} Disable"
-     yum_repository:
+     yum:
        name: "{{ packageName }}"
        state: absent
 
