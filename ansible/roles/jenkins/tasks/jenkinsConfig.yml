@@ -1,0 +1,9 @@
+---
+ - name: Copy nginx files
+   copy:
+     src: "{{ role_path }}/files/jenkins.log"
+     dest: /var/log/nginx/jenkins/access.log
+     mode: 0644
+   tags:
+     - deploy
+     - config jenkins

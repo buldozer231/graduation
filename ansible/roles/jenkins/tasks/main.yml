@@ -3,6 +3,11 @@
     tags:
       - deploy
       - install_jenkins
+  - import_tasks: jenkinsConfig.yml
+    tags:
+      - deploy
+      - install_jenkins
+
   - import_tasks: jenkinsRemove.yml
     tags:
       - remove_jenkins

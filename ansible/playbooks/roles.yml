@@ -4,6 +4,7 @@
 #  become_password: 1Vfrcbv53
   roles:
     - checker
+    - epel
     - wget
     - java
     - jenkins
