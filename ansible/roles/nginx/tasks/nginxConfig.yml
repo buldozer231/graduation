@@ -7,4 +7,4 @@
    notify: Nginx Restart
    tags:
      - deploy
-     - config nginx
+     - config_nginx

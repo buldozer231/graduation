@@ -1,9 +1,13 @@
 ---
- - name: Copy nginx files
+ - name: Creates Jenkins log directory
+   file:
+     path: /var/log/nginx/jenkins
+     state: directory
+ - name: Copy jenkins files
    copy:
      src: "{{ role_path }}/files/jenkins.log"
      dest: /var/log/nginx/jenkins/access.log
      mode: 0644
    tags:
      - deploy
-     - config jenkins
+     - config_jenkins
