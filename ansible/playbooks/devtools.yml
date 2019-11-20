@@ -1,11 +1,13 @@
 ---
 - hosts: all
   become: yes
-#  become_password: 1Vfrcbv53
   roles:
     - checker
     - epel
+    - git
     - wget
     - java
+    - maven
     - jenkins
     - nginx
+    - telegram

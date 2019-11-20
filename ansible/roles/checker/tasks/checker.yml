@@ -1,4 +1,5 @@
 ---
+
   - name: "Checking tasks"
     package_facts:
       manager: "auto"
