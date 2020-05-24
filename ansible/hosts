@@ -15,5 +15,4 @@ rhel1 ansible_host=ec2-18-188-152-43.us-east-2.compute.amazonaws.com ansible_por
 ubuntu1 ansible_host=ec2-3-134-93-66.us-east-2.compute.amazonaws.com ansible_port=22 ansible_user=ubuntu ansible_ssh_private_key_file=/etc/ansible/keys.pem
 [centos]
 centos1 ansible_host=ec2-3-134-252-7.us-east-2.compute.amazonaws.com ansible_port=22 ansible_user=root ansible_ssh_private_key_file=/etc/ansible/keys.pem
-[virtual]
-virtual1 ansible_host=192.168.1.106 ansible_port=22 ansible_user=user ansible_ssh_pass=1Vfrcbv53 ansible_become_pass=1Vfrcbv53
+
